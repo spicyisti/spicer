@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Spicer plugin for Craft CMS 3.x
+ *
+ * SpicerField Field Input
+ *
+ * @author    Istiak
+ * @copyright Copyright (c) 2022 Istiak
+ * @link      https://istiakshams.com
+ * @package   Spicer
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Spicer plugin for Craft CMS
+ *
+ * SpicerField Field Settings
+ *
+ * @author    Istiak
+ * @copyright Copyright (c) 2022 Istiak
+ * @link      https://istiakshams.com
+ * @package   Spicer
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("spicyisti\\spicer\\assetbundles\\spicer\\SpicerAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

@@ -1,0 +1,49 @@
+{
+    "name": "spicyisti/spicer",
+    "description": "Boilerplate core plugin",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "spicer"
+    ],
+    "support": {
+        "docs": "https://github.com/Istiak/spicer/blob/master/README.md",
+        "issues": "https://github.com/Istiak/spicer/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Istiak",
+            "homepage": "https://istiakshams.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "spicyisti\\spicer\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Spicer",
+        "handle": "spicer",
+        "developer": "Istiak",
+        "developerUrl": "https://istiakshams.com",
+        "documentationUrl": "https://github.com/Istiak/spicer/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/Istiak/spicer/master/CHANGELOG.md",
+        "components": {
+            "spicerService": "spicyisti\\spicer\\services\\SpicerService"
+        },
+        "class": "spicyisti\\spicer\\Spicer"
+    }
+}
